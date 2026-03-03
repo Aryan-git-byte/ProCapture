@@ -1,0 +1,10 @@
+# Compiled binaries
+procapture
+*.o
+
+# Packages
+*.deb
+*.snap
+
+# IDE files
+.vscode/
