@@ -1,8 +1,0 @@
-[Desktop Entry]
-Name=ProCapture
-Comment=A lightweight, hardware-accelerated screen recorder
-Exec=procapture
-Icon=procapture
-Terminal=false
-Type=Application
-Categories=AudioVideo;Recorder;

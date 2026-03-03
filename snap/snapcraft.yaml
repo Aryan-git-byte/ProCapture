@@ -1,0 +1,36 @@
+name: procapture
+base: core22
+version: '1.0'
+summary: A lightweight, hardware-accelerated screen recorder
+description: |
+  ProCapture is a blazing-fast, lightweight screen recorder for Linux. 
+  Built natively with C and GTK3, it leverages your GPU for hardware-accelerated 
+  recording with near-zero CPU overhead.
+
+grade: stable
+confinement: strict
+
+apps:
+  procapture:
+    command: bin/procapture
+    extensions: [gnome] 
+    plugs:
+      - x11             
+      - pulseaudio      
+      - opengl          
+      - home            
+      - removable-media 
+
+parts:
+  procapture:
+    plugin: nil
+    source: .
+    build-packages:
+      - build-essential
+      - libgtk-3-dev
+      - pkg-config
+    stage-packages:
+      - ffmpeg          
+    override-build: |
+      mkdir -p $CRAFT_PART_INSTALL/bin
+      gcc src/main.c -o $CRAFT_PART_INSTALL/bin/procapture $(pkg-config --cflags --libs gtk+-3.0)

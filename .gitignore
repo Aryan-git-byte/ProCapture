@@ -8,3 +8,10 @@ procapture
 
 # IDE files
 .vscode/
+
+# Debian build junk
+debian/.debhelper/
+debian/procapture/
+debian/files
+debian/*.log
+debian/*.substvars
