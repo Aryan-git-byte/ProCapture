@@ -1,5 +1,12 @@
+procapture (1.1-1) noble; urgency=medium
+
+  * Added Advanced Timelapse Mode with fractional framerate capture.
+  * UI improvements for video settings.
+
+ -- Aryan Kumar <aryan17550@gmail.com>  Tue, 03 Mar 2026 13:00:00 +0530
+
 procapture (1.0-1) noble; urgency=medium
 
-  * Initial release. (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+  * Initial Release.
 
  -- Aryan Kumar <aryan17550@gmail.com>  Tue, 03 Mar 2026 12:32:46 +0530

@@ -1,6 +1,6 @@
 name: procapture
 base: core22
-version: '1.0'
+version: '1.1'
 summary: A lightweight, hardware-accelerated screen recorder
 description: |
   ProCapture is a blazing-fast, lightweight screen recorder for Linux. 
